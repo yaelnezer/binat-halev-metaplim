@@ -109,9 +109,9 @@ img{max-width:100%;display:block;}
 .gain:hover{box-shadow:0 20px 40px -20px rgba(58,40,26,.45);border-color:var(--gold);}
 .gain::before{content:"";position:absolute;top:0;right:0;left:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--primary-light));transform:scaleX(0);transform-origin:right;transition:transform .7s ease .2s;}
 .gain.in::before{transform:scaleX(1);}
-.gain .ico{font-family:var(--f-head);color:var(--gold);font-size:1.6rem;line-height:1;margin-bottom:.5rem;display:block;}
+.gain .ico{font-family:var(--f-head);color:var(--primary);font-size:1.6rem;line-height:1;margin-bottom:.5rem;display:block;}
 .gain .gt{font-family:var(--f-label);font-weight:700;font-size:1.25rem;color:var(--primary-dark);margin-bottom:.35rem;}
-.gain .gd{font-family:var(--f-body);font-size:1.2rem;line-height:1.7;color:var(--text-mid);}
+.gain .gd{font-family:var(--f-body);font-size:1.3rem;line-height:1.8;color:var(--text-dark);}
 @media (prefers-reduced-motion:reduce){
   .gain{opacity:1;transform:none;transition:none;}
   .gain::before{transform:scaleX(1);transition:none;}
@@ -130,8 +130,8 @@ img{max-width:100%;display:block;}
 .hero-intro::before{content:"";position:absolute;top:0;right:0;left:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-light));}
 .hero-intro p{
   font-family:var(--f-body);
-  font-size:clamp(.99rem,.88rem + .62vw,1.25rem);
-  line-height:1.7;
+  font-size:1.4rem;
+  line-height:1.8;
   color:var(--cream-light);
   margin-bottom:1rem;
 }
@@ -139,7 +139,7 @@ img{max-width:100%;display:block;}
 .hero-intro b{font-family:var(--f-label);font-weight:700;color:var(--gold-light);}
 
 /* ===== כפתורים ===== */
-.btns{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin-bottom:1rem;}
+.btns{display:flex;flex-wrap:wrap;justify-content:center;gap:1.4rem;margin-top:1.75rem;margin-bottom:1rem;}
 .btn{font-family:var(--f-label);font-weight:700;font-size:1.2rem;padding:.9rem 2.2rem;border-radius:999px;display:inline-flex;align-items:center;gap:.5rem;min-height:52px;cursor:pointer;border:none;transition:all .2s;}
 .btn-fill{background:var(--primary);color:var(--cream-light);box-shadow:0 10px 26px -10px rgba(45,122,110,.65);}
 .btn-fill:hover{background:var(--primary-dark);color:var(--cream-light);transform:translateY(-2px);}
@@ -162,7 +162,7 @@ img{max-width:100%;display:block;}
 .rule i{font-style:normal;font-family:var(--f-head);color:var(--gold);font-size:1.15rem;line-height:1;}
 .section-heading{font-family:var(--f-head);font-weight:400;font-size:clamp(1.7rem,4vw,2.3rem);color:var(--primary-dark);text-align:center;line-height:1.4;margin-bottom:.6rem;}
 .section-hook{font-family:var(--f-head);font-weight:400;font-size:clamp(1.4rem,3vw,1.75rem);color:var(--primary-dark);text-align:center;line-height:1.5;max-width:660px;margin:0 auto 1.4rem;text-wrap:balance;}
-.section-sub{font-family:var(--f-body);text-align:center;color:var(--text-mid);font-size:1.2rem;margin-bottom:1.6rem;}
+.section-sub{font-family:var(--f-body);text-align:center;color:var(--text-dark);font-size:1.25rem;margin-bottom:1.6rem;}
 
 .card{position:relative;background:var(--cream-light);border:1px solid var(--gold-light);border-radius:1.1rem;padding:2.4rem 2.2rem;box-shadow:0 12px 30px -18px rgba(58,40,26,.35);overflow:hidden;}
 .card::before{content:"";position:absolute;top:0;right:0;left:0;height:4px;background:linear-gradient(90deg,var(--primary),var(--primary-light));}
@@ -171,7 +171,7 @@ img{max-width:100%;display:block;}
 
 .bullets{list-style:none;display:flex;flex-direction:column;gap:1rem;max-width:620px;margin:0 auto;}
 .bullets li{display:flex;align-items:flex-start;gap:.7rem;font-family:var(--f-body);font-size:1.3rem;line-height:1.75;color:var(--text-dark);}
-.bullets li .mk{flex:none;color:var(--gold);font-size:1.2rem;line-height:1.7;}
+.bullets li .mk{flex:none;color:var(--primary);font-size:1.2rem;line-height:1.7;}
 
 /* ===== הכלים ===== */
 .innov{background:linear-gradient(160deg,var(--primary-dark),var(--primary));padding:3.25rem 1.5rem;overflow:hidden;}
@@ -194,7 +194,7 @@ img{max-width:100%;display:block;}
 .track .acts{display:flex;flex-direction:column;gap:.7rem;align-items:flex-start;}
 
 /* ===== קרוסלת המלצות ===== */
-.carousel{display:flex;gap:1.2rem;overflow-x:auto;scroll-snap-type:x mandatory;padding:.5rem .2rem 1.2rem;scrollbar-width:thin;scrollbar-color:var(--gold-light) transparent;}
+.carousel{display:flex;gap:1.2rem;overflow-x:auto;scroll-snap-type:x mandatory;padding:.5rem .2rem .6rem;scrollbar-width:thin;scrollbar-color:var(--gold-light) transparent;}
 .carousel::-webkit-scrollbar{height:8px;}
 .carousel::-webkit-scrollbar-thumb{background:var(--gold-light);border-radius:999px;}
 .carousel::-webkit-scrollbar-track{background:transparent;}
@@ -242,7 +242,7 @@ img{max-width:100%;display:block;}
 }
 .faq[open] summary .pm{transform:rotate(45deg);background:var(--gold-deep);}
 .faq .ans{padding:0 1.6rem 1.4rem;}
-.faq .ans p{font-family:var(--f-body);font-size:1.25rem;line-height:1.8;color:var(--text-dark);
+.faq .ans p{font-family:var(--f-body);font-size:1.35rem;line-height:1.8;color:var(--text-dark);
   animation:faqIn .3s ease;}
 @keyframes faqIn{from{opacity:0;transform:translateY(-6px);}to{opacity:1;transform:none;}}
 @media (prefers-reduced-motion:reduce){.faq .ans p{animation:none;}.faq[open] summary .pm{transition:none;}}
@@ -269,19 +269,28 @@ img{max-width:100%;display:block;}
 .totop{position:fixed;bottom:1.4rem;left:1.4rem;z-index:60;font-family:var(--f-label);font-weight:700;font-size:1.1rem;line-height:1;border:none;background:var(--primary);color:var(--cream-light);padding:.75rem 1.2rem;border-radius:999px;cursor:pointer;box-shadow:0 12px 26px -10px rgba(31,95,85,.7);display:none;align-items:center;gap:.4rem;transition:all .2s;}
 .totop.show{display:inline-flex;}
 .totop:hover{background:var(--primary-dark);transform:translateY(-2px);}
-.footer{background:var(--cream-deep);padding:2.2rem 1.5rem;text-align:center;}
-.footer .brand{font-family:var(--f-label);font-weight:600;font-size:1.15rem;color:var(--primary);margin-bottom:.3rem;}
-.footer p{font-family:var(--f-form);font-size:1rem;color:var(--text-light);}
-.footer .cr{margin-top:.7rem;font-size:.9rem;}
+.footer{background:linear-gradient(160deg,var(--primary-dark),var(--primary));padding:2.2rem 1.5rem;text-align:center;margin-top:1.5rem;}
+.footer p{font-family:var(--f-label);font-size:1.05rem;color:var(--cream-light);font-weight:600;}
 
 /* ===== התאמות טיפוגרפיה נזילה ===== */
-.card p{font-size:clamp(1.02rem,.9rem + .68vw,1.3rem);line-height:1.8;}
-.bullets li{font-size:clamp(1rem,.9rem + .6vw,1.25rem);line-height:1.75;}
-.about p{font-size:clamp(1.02rem,.9rem + .68vw,1.3rem);line-height:1.85;}
+.card p{font-size:1.4rem;line-height:1.85;}
+.bullets li{font-size:1.3rem;line-height:1.75;}
+.about p{font-size:1.4rem;line-height:1.9;}
 .card{padding:clamp(1.5rem,4.5vw,2.4rem) clamp(1.2rem,4.5vw,2.2rem);}
 .gain-grid.wide{grid-template-columns:repeat(auto-fit,minmax(230px,1fr));}
-.footer .backlink{display:inline-block;margin-top:.9rem;font-family:var(--f-label);font-weight:700;font-size:1.05rem;color:var(--primary);}
-.footer .backlink:hover{color:var(--primary-dark);}
+/* הכרטיס הירוק כרכיב אחרון במקטע השיטה, בלי שוליים תחתונים */
+#method .hero-intro{margin-bottom:0;}
+
+/* ===== מי אני, פסקאות בתוך כרטיס ===== */
+.about .card p{font-family:var(--f-body);font-size:1.4rem;line-height:1.9;color:var(--text-dark);text-align:right;margin-bottom:1.1rem;}
+
+/* ===== ריווח בנייד ===== */
+@media (max-width:820px){
+  .hero{padding-top:1rem;}
+  .sec{padding-top:2rem;padding-bottom:2rem;}
+  .innov{padding-top:2.5rem;padding-bottom:2.5rem;}
+  .contact{padding-top:2.5rem;padding-bottom:2.5rem;}
+}
 </style></head>
 <body>
 
@@ -320,7 +329,6 @@ img{max-width:100%;display:block;}
     </div>
 
     <div class="hero-intro">
-      <p>עבודת הטיפול וההנחיה דורשת נתינה מתמשכת, הכלה רגשית ותפקוד יומי בתוך עומס רב. במקביל, מהפכת הבינה המלאכותית נכנסת גם לעולמות ההנחיה והטיפול, ומציעה כלים חסרי תקדים לפיתוח תוכן, לסיכום ולהיערכות.</p>
       <p><b>בינת הלב - Life Coding</b> היא תוכנית חווייתית ומעשית לאנשי טיפול והנחיה, המחברת בין שימוש מתקדם ונגיש בבינה מלאכותית לבין פיתוח מיומנויות אנושיות חיוניות: מודעות עצמית, גמישות מחשבתית, תקשורת מקרבת, קבלת החלטות וניהול אנרגיה.</p>
       <p>המשתתפים יוצאים עם <b>כלים דיגיטליים ותודעתיים אישיים</b>, שמסייעים להם לחשוב, לתכנן תהליכים ומפגשים, לעבד תכנים ולנהל את העומס המקצועי והרגשי בצורה ממוקדת ואפקטיבית יותר בעבודה, בקבוצה ובבית.</p>
     </div>
@@ -380,12 +388,12 @@ img{max-width:100%;display:block;}
 </section>
 
 <!-- ===== מהות השיטה ===== -->
-<section id="method" class="sec sec-cream after-band" style="scroll-margin-top:64px;">
+<section id="method" class="sec sec-cream" style="scroll-margin-top:64px;padding-top:1.5rem;padding-bottom:1.5rem;">
   <div class="narrow reveal">
     <div class="rule" aria-hidden="true"><i>✦</i></div>
     <h2 class="section-heading">מהות השיטה</h2>
-    <article class="card">
-      <p class="section-hook" style="margin-bottom:1.4rem;">אם מילים כותבות קוד בבינה מלאכותית, אולי הן כותבות גם את קוד החיים שלנו?</p>
+    <p class="section-hook">אם מילים כותבות קוד בבינה מלאכותית, אולי הן כותבות גם את קוד החיים שלנו?</p>
+    <article class="hero-intro">
       <p>לכל אחד מאיתנו יש מערכת אמונות יסוד שנוצרה מוקדם בחיים. האמונות האלו פועלות ברקע התודעה באופן אוטומטי, וקובעות איך אנחנו מפרשים את מה שקורה, איך אנחנו מגיבים, ואיזו סצנה חוזרת אצלנו שוב ושוב.</p>
       <p>בינת הלב - Life Coding היא שיטה להתפתחות אישית שמשלבת גישות פסיכולוגיות מבוססות מחקר, כמו שיטת העבודה של ביירון קייטי, תקשורת מקרבת, שיטת 12 הצעדים, ACT ו-NLP, עם כלי בינה מלאכותית. התהליך מאפשר לזהות מה משתקף בחיים, לגלות את הקוד שמאחוריו, ולבחור במודע בקוד חדש המבוסס על ערכים, חזון וחופש.</p>
       <p>את השיטה פיתחתי מתוך החיבור בין עבודה תודעתית לעולם הבינה המלאכותית. השם Life Coding נולד מהמונח vibe coding, שטבע חוקר הבינה המלאכותית אנדריי קרפתי. בתכנות הזה מתארים בשפה טבעית את הכוונה, נותנים את ה"ויב", והמערכת כותבת את הקוד. בחיים זה עובד באותו אופן: ה"ויב" הפנימי, האמונות והסיפורים שלנו, כותב את הקוד של המציאות שאנחנו חווים.</p>
@@ -413,9 +421,36 @@ img{max-width:100%;display:block;}
     <h2 class="section-heading">משתתפים משתפים</h2>
     <p class="section-hook">אנשי חינוך, מנהלים ומטפלים שעברו את התהליך, מספרים מה השתנה אצלם בעבודה ובהתמודדות היומיומית.</p>
 
+    <div class="faqs" style="margin-bottom:2rem;">
+      <details class="faq">
+        <summary><span class="pm">+</span><span class="q">ההמלצה של עדי זקר</span></summary>
+        <div class="ans">
+          <p>יעל יקרה, תודה ענקית על הקורס המעמיק. לאורך חיי למדתי גישות שונות ושיטות שונות להתפתחות. בקורס של בינת הלב יצרת שילוב גאוני בין הרבה גישות, חלק הכרתי וחלק היו חידוש מרענן וחשוב עבורי. שזרת את הכלים באופן הגיוני, כך שכל כלי הוביל אותי שלב אחר שלב להכרות מעמיקה עם עצמי בתחומים שלא התוודעתי להם קודם.</p>
+          <p>בסוף הקורס הצלחתי ליצור באמצעות הכלים סט כרזות מרהיב, אותן אני מדפיסה ותולה כדי להשתמש בהן כהשראה לשינוי התודעה. השילוב של הכלים הרוחניים המובילים להתפתחות, יחד עם כלי הבינה בצורה כל כך נגישה, מאפשרים לי להמשיך לעבוד איתם באופן עצמאי.</p>
+          <p>ההנגשה של כל הכלים והדרך הסבלנית והמקצועית בהן העברת את הקורס גרמו לכל הנלמד להפוך לישים. ממליצה בחום לכל מי שאוהב להתפתח כדרך חיים לא להחמיץ את הקורס הזה.</p>
+        </div>
+      </details>
+      <details class="faq">
+        <summary><span class="pm">+</span><span class="q">ההמלצה של אהובה דור</span></summary>
+        <div class="ans">
+          <p>אני ממליצה בחום על הקורס בינת הלב בהנחיית יעל נזר. זהו קורס ייחודי ומעשיר, המעניק כלים מעשיים להתמודדות עם מצבים ואתגרים שונים בחיי היומיום. התכנים מגוונים, מעוררי חשיבה ורלוונטיים לחיים. בנוסף לתכנים ניתנים כלים הממשיכים ללוות אותי גם לאחר סיום הקורס.</p>
+          <p>יעל מעבירה את הקורס בצורה ברורה, מקצועית ומעניינת, תוך יצירת אווירה נעימה, מכילה ומאפשרת. הידע, הניסיון והרגישות שלה מורגשים בכל מפגש ותורמים לחוויית למידה משמעותית ומעצימה.</p>
+          <p>יעל, אני מודה לך מקרב לב על קורס שהעניק לי תובנות וכלים חשובים, והשאיר בי טעם של עוד.</p>
+        </div>
+      </details>
+      <details class="faq">
+        <summary><span class="pm">+</span><span class="q">ההמלצה של פנינה</span></summary>
+        <div class="ans">
+          <p>השתתפתי בסדנה של יעל נזר בשם בינת הלב Life Coding, ואני שמחה ונרגשת לתת את המלצתי. הסדנה הייתה מקצועית ומעמיקה ושילבה את עולם המודעות ועולם הבינה המלאכותית בצורה מיטבית, מעניינת וחדשנית.</p>
+          <p>יעל השקיעה זמן רב ליצירת הסדנה המופלאה הזאת, בתכנים, בעיצוב, בהנגשה. החשיבה והדיוק ניכרים בכל פרט ופרט. כמה בינה ולב יש בסדנה הזאת.</p>
+          <p>יצאתי מהסדנה עם סל כלים גדול ומגוון, תודעתי וטכנולוגי, עם חומרים לעבודה עצמית והתפתחות אישית, וכלי בינה מלאכותית שאאמץ לעצמי, במיוחד NotebookLM. תודה גדולה יעל, זכיתי.</p>
+        </div>
+      </details>
+    </div>
+
     <div class="carousel-nav">
       <button type="button" id="prev" aria-label="להמלצה הקודמת">→</button>
-      <span class="cn-label">גללו לצדדים כדי לראות עוד</span>
+      <span class="cn-label">גללו לצדדים כדי לראות המלצות נוספות</span>
       <button type="button" id="next" aria-label="להמלצה הבאה">←</button>
     </div>
 
@@ -454,35 +489,8 @@ img{max-width:100%;display:block;}
         </div>
       </div>
 
-      <div class="slide wide">
-        <div class="quote-card">
-          <div class="mark">״</div>
-          <p>יעל יקרה, תודה ענקית על הקורס המעמיק. לאורך חיי למדתי גישות שונות ושיטות שונות להתפתחות. בקורס של בינת הלב יצרת שילוב גאוני בין הרבה גישות, חלק הכרתי וחלק היו חידוש מרענן וחשוב עבורי. שזרת את הכלים באופן הגיוני, כך שכל כלי הוביל אותי שלב אחר שלב להכרות מעמיקה עם עצמי בתחומים שלא התוודעתי להם קודם.</p>
-          <p>בסוף הקורס הצלחתי ליצור באמצעות הכלים סט כרזות מרהיב, אותן אני מדפיסה ותולה כדי להשתמש בהן כהשראה לשינוי התודעה. השילוב של הכלים הרוחניים המובילים להתפתחות, יחד עם כלי הבינה בצורה כל כך נגישה, מאפשרים לי להמשיך לעבוד איתם באופן עצמאי.</p>
-          <p>ההנגשה של כל הכלים והדרך הסבלנית והמקצועית בהן העברת את הקורס גרמו לכל הנלמד להפוך לישים. ממליצה בחום לכל מי שאוהב להתפתח כדרך חיים לא להחמיץ את הקורס הזה.</p>
-          <p class="who">עדי</p>
-        </div>
-      </div>
 
-      <div class="slide wide">
-        <div class="quote-card">
-          <div class="mark">״</div>
-          <p>אני ממליצה בחום על הקורס בינת הלב בהנחיית יעל נזר. זהו קורס ייחודי ומעשיר, המעניק כלים מעשיים להתמודדות עם מצבים ואתגרים שונים בחיי היומיום. התכנים מגוונים, מעוררי חשיבה ורלוונטיים לחיים. בנוסף לתכנים ניתנים כלים הממשיכים ללוות אותי גם לאחר סיום הקורס.</p>
-          <p>יעל מעבירה את הקורס בצורה ברורה, מקצועית ומעניינת, תוך יצירת אווירה נעימה, מכילה ומאפשרת. הידע, הניסיון והרגישות שלה מורגשים בכל מפגש ותורמים לחוויית למידה משמעותית ומעצימה.</p>
-          <p>יעל, אני מודה לך מקרב לב על קורס שהעניק לי תובנות וכלים חשובים, והשאיר בי טעם של עוד.</p>
-          <p class="who">אהובה דור</p>
-        </div>
-      </div>
 
-      <div class="slide wide">
-        <div class="quote-card">
-          <div class="mark">״</div>
-          <p>השתתפתי בסדנה של יעל נזר בשם בינת הלב Life Coding, ואני שמחה ונרגשת לתת את המלצתי. הסדנה הייתה מקצועית ומעמיקה ושילבה את עולם המודעות ועולם הבינה המלאכותית בצורה מיטבית, מעניינת וחדשנית.</p>
-          <p>יעל השקיעה זמן רב ליצירת הסדנה המופלאה הזאת, בתכנים, בעיצוב, בהנגשה. החשיבה והדיוק ניכרים בכל פרט ופרט. כמה בינה ולב יש בסדנה הזאת.</p>
-          <p>יצאתי מהסדנה עם סל כלים גדול ומגוון, תודעתי וטכנולוגי, עם חומרים לעבודה עצמית והתפתחות אישית, וכלי בינה מלאכותית שאאמץ לעצמי, במיוחד NotebookLM. תודה גדולה יעל, זכיתי.</p>
-          <p class="who">פנינה</p>
-        </div>
-      </div>
 
       <div class="slide">
         <div class="quote-card">
@@ -585,15 +593,17 @@ img{max-width:100%;display:block;}
 <!-- ===== מי אני ===== -->
 <section id="about" class="sec sec-light" style="scroll-margin-top:64px;">
   <div class="about reveal">
-    <div style="width:min(440px,92%);margin:0 auto 2.5rem;">
-      <img src="yael-photo.jpg" alt="יעל נזר" style="border-radius:1.25rem;box-shadow:0 24px 54px -26px rgba(58,40,26,.45);">
-    </div>
     <div class="rule" aria-hidden="true"><i>✦</i></div>
     <h2 class="section-heading">מי אני</h2>
     <div class="role">יעל נזר, MEd <span style="color:var(--gold);">✦</span> מומחית לטכנו-פדגוגיה, בינה מלאכותית והתפתחות אישית</div>
-    <p>אני יעל נזר, מפתחת שיטת בינת הלב - Life Coding. למעלה מ-35 שנה אני עוסקת בפדגוגיה דיגיטלית, בלמידה, בהנחיית מורים ואנשי מקצוע ובהובלת תהליכי שינוי. לקחתי את שני התחומים בהם אני מתמחה, העבודה התודעתית-רגשית והבינה המלאכותית, וחיברתי אותם לשיטה אחת.</p>
-    <p>השיטה משלבת כלי בינה מלאכותית מתקדמים עם מתודולוגיות מעשיות לפיתוח חוסן, מודעות, תקשורת וגמישות מחשבתית. אני מוסמכת בשיטת העבודה של ביירון קייטי, ב-NLP ובתקשורת מקרבת, ומשלבת גם את גישת ACT ואת האינטליגנציה החיובית. הבסיס המדעי מגיע ממחקרי הנוירופלסטיות, שמראים שהמוח גמיש ושאפשר לבנות בו נתיבים חדשים.</p>
-    <p>אני מכירה את שדה ההנחיה והטיפול מבפנים, את קצב היום, את העומס ואת הרגעים שבהם אנו נדרשים להיות נוכחים עבור אחרים. התוכנית מועברת בצורה נגישה, מקצועית ויישומית.</p>
+    <div style="width:min(440px,92%);margin:0 auto 2.5rem;">
+      <img src="yael-photo.jpg" alt="יעל נזר" style="border-radius:1.25rem;box-shadow:0 24px 54px -26px rgba(58,40,26,.45);">
+    </div>
+    <article class="card" style="text-align:right;margin-bottom:1.8rem;">
+      <p>אני יעל נזר, מפתחת שיטת בינת הלב - Life Coding. למעלה מ-35 שנה אני עוסקת בפדגוגיה דיגיטלית, בלמידה, בהנחיית מורים ואנשי מקצוע ובהובלת תהליכי שינוי. לקחתי את שני התחומים בהם אני מתמחה, העבודה התודעתית-רגשית והבינה המלאכותית, וחיברתי אותם לשיטה אחת.</p>
+      <p>השיטה משלבת כלי בינה מלאכותית מתקדמים עם מתודולוגיות מעשיות לפיתוח חוסן, מודעות, תקשורת וגמישות מחשבתית. אני מוסמכת בשיטת העבודה של ביירון קייטי, ב-NLP ובתקשורת מקרבת, ומשלבת גם את גישת ACT ואת האינטליגנציה החיובית. הבסיס המדעי מגיע ממחקרי הנוירופלסטיות, שמראים שהמוח גמיש ושאפשר לבנות בו נתיבים חדשים.</p>
+      <p>אני מכירה את שדה ההנחיה והטיפול מבפנים, את קצב היום, את העומס ואת הרגעים שבהם אנו נדרשים להיות נוכחים עבור אחרים. התוכנית מועברת בצורה נגישה, מקצועית ויישומית.</p>
+    </article>
     <p class="quote">מה שאנחנו יוצרים בתוך הלב, מוצא בסופו של דבר את דרכו אל העולם.</p>
     <div class="sig">באהבה, יעל</div>
     <div style="width:min(360px,82%);margin:0 auto;">
@@ -635,10 +645,7 @@ img{max-width:100%;display:block;}
 <button type="button" class="totop" id="toTop" data-id="top" onclick="go(event)" aria-label="חזרה לתפריט"><span aria-hidden="true">↑</span> לתפריט</button>
 
 <footer class="footer">
-  <div class="brand">בינת הלב <span style="color:var(--gold);">✦</span> Life Coding</div>
-  <p>יעל נזר · מפתחת השיטה</p>
-  <a class="backlink" href="https://yaelnezer.github.io/binat-halev-landing/" target="_blank" rel="noopener">לדף הראשי של בינת הלב - Life Coding ‹</a>
-  <p class="cr">© כל הזכויות שמורות</p>
+  <p>© כל הזכויות שמורות ליעל נזר 2026 · בינת הלב - Life Coding</p>
 </footer>
 
 <script>
